@@ -22,7 +22,7 @@
 .user-component__subtitle {
   margin-top: 8px;
   font-size: 17px;
-  color: rgba(0, 0, 0, 0.4);
+  color: white;
 }
 
 .user-component__avatar--xl {
@@ -49,8 +49,20 @@
 .user-component__time {
   margin-bottom: 10px;
   display: block;
+  color: white;
 }
 
 .user-component__text i {
   color: red;
+}
+
+.upbit__text {
+  color: white;
+  opacity: 0.75;
+}
+
+.main-screen.chats-screen {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
 }

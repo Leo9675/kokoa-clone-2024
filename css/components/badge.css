@@ -10,3 +10,7 @@
   font-weight: 600;
   font-size: 12px;
 }
+
+.badge.badge__black {
+  background-color: black;
+}

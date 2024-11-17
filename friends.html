@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Friends - Kokoa clone</title>
+    <title>Upbit - friends</title>
   </head>
   <body>
     <div class="status-bar">
@@ -13,10 +13,10 @@
         <i class="fas fa-wifi"></i>
       </div>
       <div class="status-bar__column">
-        <span>18:43</span>
+        <span>07:15</span>
       </div>
       <div class="status-bar__column">
-        <span>110%</span>
+        <span>126%</span>
         <i class="fas fa-battery-full"></i>
         <i class="fas fa-bolt"></i>
       </div>
@@ -27,7 +27,12 @@
       <div class="screen-header__icons">
         <span><i class="fas fa-search fa-lg"></i></span>
         <span><i class="fas fa-music fa-lg"></i></span>
-        <span><i class="fas fa-cog fa-lg"></i></span>
+        <span
+          ><a href="settings.html">
+            <div class="point point_cog"></div>
+            <i class="fas fa-cog fa-lg"></i
+          ></a>
+        </span>
       </div>
     </header>
 
@@ -40,37 +45,96 @@
       <div class="user-component">
         <div class="user-component__column">
           <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfY9VxAMOkOuPcx9wcs0q_ntSYyH0P4ss6og&s"
+            src="https://pbs.twimg.com/profile_images/378800000857919980/lHqPIZza_400x400.png"
             class="user-component__avatar user-component__avatar--xl"
           />
           <div class="user-componene__text">
-            <h4 class="user-component__title">Nicolas</h4>
+            <h4 class="user-component__title">Doge</h4>
             <!-- <h6 class="user-component__subtitle">Whatever</h6> -->
           </div>
         </div>
-        <div class="user-component__column"></div>
+        <div class="user-component__column"><span id="love">❤️Yuun</span></div>
       </div>
       <div class="friends-screen__channel">
         <div class="friends-screen__channel-header">
-          <span>Channel</span>
+          <span id="upbit__channel">Channel</span>
           <i class="fas fa-chevron-up fa-xs"></i>
         </div>
       </div>
       <div class="user-component">
         <div class="user-component__column">
           <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfY9VxAMOkOuPcx9wcs0q_ntSYyH0P4ss6og&s"
+            src="data:image/png;base64,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"
             class="user-component__avatar user-component__avatar--sm"
           />
           <div class="user-componene__text">
             <h4 class="user-component__title user-component__title--not-bold">
-              Channel
+              Channel <span id="channel-number">15 ></span>
             </h4>
             <!-- <h6 class="user-component__subtitle">Whatever</h6> -->
           </div>
         </div>
         <div class="user-component__column">
-          <span>2 <i class="fas fa-chevron-right fa-xs"></i></span>
+          <span><i class="fas fa-chevron-right fa-xs"></i></span>
+        </div>
+      </div>
+      <div class="friends-screen__channel">
+        <div class="friends-screen__channel-header">
+          <span id="upbit__channel">Friends</span>
+          <i class="fas fa-chevron-up fa-xs"></i>
+        </div>
+      </div>
+      <div class="upbit__friends">
+        <div class="user-component">
+          <div class="user-component__column">
+            <img
+              src="https://static.upbit.com/logos/BTC.png"
+              class="user-component__avatar user-component__avatar--sm"
+            />
+            <div class="user-componene__text">
+              <h4 class="user-component__title user-component__title--not-bold">
+                Bitcoin
+              </h4>
+              <!-- <h6 class="user-component__subtitle">Whatever</h6> -->
+            </div>
+          </div>
+          <div class="user-component__column">
+            <span><i class="fas fa-chevron-right fa-xs"></i></span>
+          </div>
+        </div>
+        <div class="user-component">
+          <div class="user-component__column">
+            <img
+              src="https://hips.hearstapps.com/hmg-prod/images/republican-presidential-candidate-former-president-donald-news-photo-1721157463.jpg?crop=0.66699xw:1xh;center,top&resize=1200:*"
+              class="user-component__avatar user-component__avatar--sm"
+            />
+            <div class="user-componene__text">
+              <h4 class="user-component__title user-component__title--not-bold">
+                Donald Trump
+              </h4>
+              <!-- <h6 class="user-component__subtitle">Whatever</h6> -->
+            </div>
+          </div>
+          <div class="user-component__column">
+            <span><i class="fas fa-chevron-right fa-xs"></i></span>
+          </div>
+        </div>
+        <div class="user-component">
+          <div class="user-component__column">
+            <img
+              src="https://aviationweek.com/sites/default/files/styles/crop_freeform/public/2020-05/400px-elon_musk_royal_society.jpg?itok=Yh_ShSfL"
+              class="user-component__avatar user-component__avatar--sm"
+            />
+            <div class="user-componene__text">
+              <h4 class="user-component__title user-component__title--not-bold">
+                Elon Musk
+              </h4>
+              <!-- <h6 class="user-component__subtitle">Whatever</h6> -->
+            </div>
+          </div>
+          <div class="user-component__column">
+            <span><i class="fas fa-chevron-right fa-xs"></i></span>
+          </div>
         </div>
       </div>
     </main>
@@ -84,7 +148,7 @@
         </li>
         <li class="nav__btn">
           <a class="nav__link" href="chats.html">
-            <span class="nav__notification badge">1</span>
+            <span class="nav__notification badge">10</span>
             <i class="far fa-comment fa-2x"></i
           ></a>
         </li>
@@ -103,11 +167,13 @@
     </nav>
 
     <div id="splash-screen">
-      <i class="fas fa-comment"></i>
+      <img
+        src="https://miro.medium.com/v2/resize:fit:720/format:webp/0*wLZWjSylgKCiGtoD"
+      />
     </div>
 
     <div id="no-mobile">
-      <span>Your screen is too big ㅠㅠ</span>
+      <span>Your screen is too big😢</span>
     </div>
 
     <script

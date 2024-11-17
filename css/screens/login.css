@@ -1,19 +1,25 @@
+.upbit__login {
+  background-color: #073686;
+}
+
 .welcome-header {
   margin: 90px 0px;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 
-.welcome-header__title {
+.welcome-header__img {
   margin-bottom: 30px;
-  font-size: 25px;
 }
 
 .welcome-header__text {
   width: 60%;
-  opacity: 0.7;
+  color: white;
+  position: absolute;
+  bottom: 0;
 }
 
 #login-form {
@@ -42,15 +48,19 @@
 }
 
 #login-form input[type="submit"] {
-  background-color: var(--yellow);
+  background-color: #3b82f6;
   cursor: pointer;
   padding: 20px 0px;
   border-radius: 5px;
+  color: white;
 }
 
 #login-form a {
   text-align: center;
   text-decoration: none;
-  color: inherit;
-  font-size: 13px;
+  color: gray;
+}
+
+#login-form span {
+  color: white;
 }
