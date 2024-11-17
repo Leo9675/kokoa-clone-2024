@@ -210,7 +210,6 @@
 }
 
 .message-row.message-row-bitcoin {
-  margin-left: 120px;
   transform: translateY(50px);
   opacity: 0;
   animation: messageyou 2s ease-in-out forwards;
@@ -255,9 +254,12 @@
 }
 
 .message-row.message-row--you.message-row--mew {
-  margin-left: 120px;
   transform: translateY(50px);
   opacity: 0;
   animation: messageyou 2s ease-in-out forwards;
   animation-delay: 4s;
+}
+
+.fa-plus-square {
+  color: black;
 }
